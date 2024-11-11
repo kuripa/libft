@@ -22,7 +22,10 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 # Add the test source files
-set(TEST_SRCS main.cpp)
+set(TEST_SRCS 
+    main.cpp
+    isalpha_tests.cpp
+    isdigit_tests.cpp)
 
 # Create the test executable
 add_executable(run_tests ${TEST_SRCS})
