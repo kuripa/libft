@@ -25,7 +25,8 @@ enable_testing()
 set(TEST_SRCS 
     main.cpp
     isalpha_tests.cpp
-    isdigit_tests.cpp)
+    isdigit_tests.cpp
+    isalnum_tests.cpp)
 
 # Create the test executable
 add_executable(run_tests ${TEST_SRCS})

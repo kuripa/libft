@@ -7,7 +7,7 @@ ARFLAGS = rcs
 NAME = libft.a
 
 # List your source files
-SRCS = ft_isalpha.c ft_isdigit.c
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c
 
 OBJS = $(SRCS:.c=.o)
 
