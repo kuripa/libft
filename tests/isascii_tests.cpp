@@ -6,13 +6,13 @@
 /*   By: nfuhrman <nfuhrman@student.42wolfsburg.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 01:30:32 by nfuhrman          #+#    #+#             */
-/*   Updated: 2024/11/12 01:31:42 by nfuhrman         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:18:43 by nfuhrman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <gtest/gtest.h>
 
 extern "C" {
-    int ft_isascii(int c);
+    #include "../libft.h"
 }
 
 TEST(IsAsciiTest, LowerBoundEdgeCase) {
