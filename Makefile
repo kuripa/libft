@@ -34,9 +34,6 @@ re: fclean all
 
 test: all
 	@cd tests && mkdir -p build && cd build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .. && make
-
-# Run tests after building
-runtests: test
 	cd tests/build && ./run_tests
 
 # Phony targets
