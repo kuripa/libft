@@ -6,7 +6,7 @@
 #    By: nfuhrman <nfuhrman@student.42wolfsburg.de  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/12 01:21:41 by nfuhrman          #+#    #+#              #
-#    Updated: 2024/11/12 01:21:43 by nfuhrman         ###   ########.fr        #
+#    Updated: 2024/11/12 01:32:24 by nfuhrman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ ARFLAGS = rcs
 NAME = libft.a
 
 # List your source files
-SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c
 
 OBJS = $(SRCS:.c=.o)
 
