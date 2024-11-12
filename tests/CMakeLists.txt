@@ -28,6 +28,7 @@ set(TEST_SRCS
     isdigit_tests.cpp
     isalnum_tests.cpp
     isascii_tests.cpp
+    isprint_tests.cpp
 )
 
 # Create the test executable
