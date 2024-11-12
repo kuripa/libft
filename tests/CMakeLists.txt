@@ -30,6 +30,7 @@ set(TEST_SRCS
     isascii_tests.cpp
     isprint_tests.cpp
     strlen_tests.cpp
+    toupper_tests.cpp
 )
 
 # Create the test executable
