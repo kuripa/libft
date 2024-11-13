@@ -32,6 +32,7 @@ set(TEST_SRCS
     strlen_tests.cpp
     toupper_tests.cpp
     tolower_tests.cpp
+    strchr_tests.cpp
 )
 
 # Create the test executable
