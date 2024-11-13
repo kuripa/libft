@@ -7,8 +7,7 @@
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 21:45:14 by nfuhrman          #+#    #+#             */
 /*   Updated: 2024/11/12 22:21:07 by nfuhrman         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+/*                                                                            */ /* ************************************************************************** */
 
 #include "libft.h"
 
@@ -17,18 +16,17 @@ char	*ft_strchr(const char *s, int c)
 	if (s == NULL)
 		return (0);
 
-    const char *ptr = s; 
     
     while (*s != '\0')
     {
-        if (*s == c)
+        if (*s == (char) c)
         {
-            return ptr - s;
+            return (char *)s;
         }
         s++;
     }
-    if (*s == '\0')
-        return 
+    if (c == '\0')
+        return (char *) s;
     
-            return NULL;
+    return NULL;
 }
