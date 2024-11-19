@@ -15,4 +15,5 @@ char *ft_strchr(const char *s, int c);
 int ft_strncmp(const char *s1, const char *s2, size_t n);
 void *ft_memset(void *buffer, int value, size_t count);
 void ft_bzero(void *buffer, size_t count);
+void	*ft_memcpy(void *dest, const void *src, size_t count);
 #endif // !LIBFT_H
