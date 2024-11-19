@@ -42,6 +42,7 @@ set(TEST_SRCS
     tolower_tests.cpp
     strchr_tests.cpp
     strncmp_tests.cpp
+    memset_tests.cpp
 )
 
 # Create the test executable
