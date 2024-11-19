@@ -5,6 +5,14 @@ project(tests)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Option to turn on debugging
+option(ENABLE_DEBUG "Compile with debug flags" OFF)
+
+if (ENABLE_DEBUG)
+    set(CMAKE_BUILD_TYPE Debug)
+    add_compile_options(-g -O0)
+endif()
+
 # Include FetchContent module to download GoogleTest
 include(FetchContent)
 FetchContent_Declare(

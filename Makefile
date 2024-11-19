@@ -15,6 +15,7 @@ AR = ar
 
 CFLAGS = -Wall -Werror -Wextra
 ARFLAGS = rcs
+DEBUG_FLAGS = -g -O0
 
 NAME = libft.a
 
@@ -57,5 +58,12 @@ test: all
 	@cd tests && mkdir -p build && cd build && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .. && make
 	cd tests/build && ./run_tests
 
+debug: CFLAGS += $(DEBUG_FLAGS)
+debug: re
+
+debug_test: debug
+	@cd tests && mkdir -p build && cd build && cmake -DENABLE_DEBUG=ON ... && make
+	
+
 # Phony targets
-.PHONY: all clean fclean re test runtests
+.PHONY: all clean fclean re test runtests debug debug_test
