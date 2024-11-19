@@ -44,6 +44,7 @@ set(TEST_SRCS
     strncmp_tests.cpp
     memset_tests.cpp
     bzero_tests.cpp
+    memcpy_tests.cpp
 )
 
 # Create the test executable
