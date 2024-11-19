@@ -6,7 +6,7 @@
 #    By: nfuhrman <nfuhrman@student.42wolfsburg.de  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/12 01:21:41 by nfuhrman          #+#    #+#              #
-#    Updated: 2024/11/13 21:23:36 by nfuhrman         ###   ########.fr        #
+#    Updated: 2024/11/19 03:43:48 by nfuhrman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,7 @@ SRCS =	ft_isalpha.c\
 		ft_strchr.c\
 	 	ft_strncmp.c\
 		ft_memset.c\
+		ft_bzero.c\
 
 OBJS = $(SRCS:.c=.o)
 
