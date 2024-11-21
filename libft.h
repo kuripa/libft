@@ -19,4 +19,5 @@ void *ft_memset(void *buffer, int value, size_t count);
 void ft_bzero(void *buffer, size_t count);
 void	*ft_memcpy(void *dest, const void *src, size_t count);
 void *ft_memmove(void *dest, const void *src, size_t count);
+void *ft_calloc(size_t nmemb, size_t size);
 #endif // !LIBFT_H
