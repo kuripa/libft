@@ -50,6 +50,7 @@ set(TEST_SRCS
     memcpy_tests.cpp
     memmove_tests.cpp
     calloc_tests.cpp
+    memchr_tests.cpp
 )
 
 # Create the test executable
