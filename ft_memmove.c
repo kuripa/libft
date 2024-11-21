@@ -6,7 +6,7 @@
 /*   By: nfuhrman <nfuhrman@student.42wolfsburg.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 04:54:23 by nfuhrman          #+#    #+#             */
-/*   Updated: 2024/11/19 05:05:08 by nfuhrman         ###   ########.fr       */
+/*   Updated: 2024/11/21 08:41:41 by nfuhrman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void *ft_memmove(void *dest, const void *src, size_t count)
 {
+    if (dest == NULL || src == NULL)
+        return NULL;
+
     char *dest_ptr = dest;
     const char *src_ptr = src;
 
