@@ -8,9 +8,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Option to turn on debugging
 option(ENABLE_DEBUG "Compile with debug flags" OFF)
 
-if (ENABLE_DEBUG)
-    set(CMAKE_BUILD_TYPE Debug)
-    add_compile_options(-g -O0)
+if (CMAKE_BUILD_TYPE STREQUAL "Debug")
+    message(STATUS "Enabling AddressSanitizer and UndefinedBehaviorSanitizer")
+    set(SANITIZER_FLAGS "-fsanitize=address,undefined")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${SANITIZER_FLAGS} -g")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${SANITIZER_FLAGS} -g")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${SANITIZER_FLAGS}")
 endif()
 
 # Include FetchContent module to download GoogleTest
