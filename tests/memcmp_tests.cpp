@@ -6,7 +6,7 @@
 /*   By: nfuhrman <nfuhrman@student.42wolfsburg.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 06:25:38 by nfuhrman          #+#    #+#             */
-/*   Updated: 2024/11/22 06:40:19 by nfuhrman         ###   ########.fr       */
+/*   Updated: 2024/11/22 07:16:55 by nfuhrman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,14 @@ TEST(MemcmpTest, NullVsNonNullBlocks) {
     const char block[] = "data";
 
     // Test case: Null block compared with non-null block
-    EXPECT_ANY_THROW(ft_memcmp(nullptr, block, 4));
-    EXPECT_ANY_THROW(ft_memcmp(block, nullptr, 4));
+    EXPECT_EQ(ft_memcmp(nullptr, block, 4), -1);
+    EXPECT_EQ(ft_memcmp(block, nullptr, 4), -1);
+
+    // Test case: Both blocks are null with size 0 (should succeed)
+    EXPECT_NO_THROW(ft_memcmp(nullptr, nullptr, 0));
+
+    // Test case: Both blocks are null with non-zero size (should throw)
+    EXPECT_EQ(ft_memcmp(nullptr, nullptr, 4), -1);
 }
 
 TEST(MemcmpTest, UnequalLengths) {
