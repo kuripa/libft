@@ -23,4 +23,5 @@ void *ft_calloc(size_t nmemb, size_t size);
 void *ft_memchr(const void *s, int c, size_t size);
 int	ft_memcmp(const void *s1, const void *s2, size_t size);
 char *ft_strrchr(const char *s, int c);
+size_t ft_strlcpy(char *dst, const char *src, size_t dsize);
 #endif // !LIBFT_H
