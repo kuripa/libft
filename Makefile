@@ -39,6 +39,7 @@ SRCS =	ft_isalpha.c\
 		ft_memcmp.c\
 		ft_strrchr.c\
 		ft_strlcpy.c\
+		ft_atoi.c\
 
 OBJS = $(SRCS:.c=.o)
 
@@ -72,7 +73,7 @@ debug: re
 
 debug_test: debug
 	@cd tests && mkdir -p build && cd build && cmake -DENABLE_DEBUG=ON ... && make
-	
+
 
 # Phony targets
 .PHONY: all clean fclean re test runtests debug debug_test
