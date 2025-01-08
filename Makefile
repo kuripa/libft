@@ -40,6 +40,7 @@ SRCS =	ft_isalpha.c\
 		ft_strrchr.c\
 		ft_strlcpy.c\
 		ft_atoi.c\
+		ft_strdup.c\
 
 OBJS = $(SRCS:.c=.o)
 

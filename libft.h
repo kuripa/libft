@@ -25,4 +25,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t size);
 char *ft_strrchr(const char *s, int c);
 size_t ft_strlcpy(char *dst, const char *src, size_t dsize);
 int ft_atoi(const char *str);
+char *ft_strdup(const char *s);
 #endif // !LIBFT_H
